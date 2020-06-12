@@ -5,42 +5,170 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import "functions";
-@import "variables";
-@import "mixins";
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "code";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "input-group";
-@import "custom-forms";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "jumbotron";
-@import "alert";
-@import "progress";
-@import "media";
-@import "list-group";
-@import "close";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "utilities";
-@import "print";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&family=Poppins:wght@400;700&family=Source+Sans+Pro&display=swap');
 
-html{
-  background-color: $gray-100;
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'root';
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'code';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import 'transitions';
+@import 'dropdown';
+@import 'button-group';
+@import 'input-group';
+@import 'custom-forms';
+@import 'nav';
+@import 'navbar';
+@import 'card';
+@import 'breadcrumb';
+@import 'pagination';
+@import 'badge';
+@import 'jumbotron';
+@import 'alert';
+@import 'progress';
+@import 'media';
+@import 'list-group';
+@import 'close';
+@import 'modal';
+@import 'tooltip';
+@import 'popover';
+@import 'carousel';
+@import 'utilities';
+@import 'print';
+
+html,
+body {
+	font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: $mostPrimary;
+	overflow-x: hidden;
+}
+
+::selection {
+	background-color: white;
+	color: $primaryBlue;
+}
+
+#banner {
+	.outer-box-center {
+		min-height: 650px;
+		height: 100vh;
+		display: table;
+		margin: auto;
+		.box-center {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			.text-overlay {
+				position: absolute;
+				left: 50%;
+				top: 37%;
+				transform: translateX(-50%);
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 190px;
+				line-height: 272px;
+				color: rgba(255, 255, 255, 0.05);
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				// z-index: -1;
+			}
+
+			.text-hero-title {
+				position: relative;
+				z-index: 1;
+				.hero-pretitle {
+					font-family: 'Noto Sans';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 27px;
+					text-align: center;
+					color: rgba(255, 255, 255, 0.7);
+					margin-bottom: -10px;
+				}
+
+				.hero-title {
+					font-family: 'Poppins';
+					color: white;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 80px;
+					line-height: 100px;
+					text-align: center;
+					color: #ffffff;
+				}
+
+				.hero-subtitle {
+					font-family: 'Noto Sans';
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 30px;
+					text-align: center;
+					color: rgba(255, 255, 255, 0.6);
+				}
+			}
+		}
+	}
+	.circle-1,
+	.circle-2
+	// .circle-3,
+  // .circle-4
+	{
+		position: absolute;
+		border-radius: 50%;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+	}
+
+	.circle-1 {
+		right: -150px;
+		top: -34px;
+		width: 378px;
+		height: 378px;
+	}
+
+	.circle-2 {
+		left: -160px;
+		top: 215px;
+		width: 378px;
+		height: 378px;
+	}
+
+	// .circle-3 {
+	// 	right: 0;
+	// 	top: 200px;
+	// 	width: 679px;
+	// 	height: 679px;
+	// }
+
+	// .circle-4 {
+	// 	width: 536px;
+	//   height: 536px;
+	//   right: 0;
+	//   top: 500;
+	// }
+}
+
+nav {
+	position: absolute !important;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  .logo{
+    height: 50px;
+    border-radius: 50%;
+  }
 }

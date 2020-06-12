@@ -34,6 +34,7 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
+$primaryBlue :  #374BFA !default;
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -62,6 +63,7 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
+$mostPrimary:   $primaryBlue !default;
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
@@ -587,7 +589,7 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 
 // Navbar
 
-$navbar-padding-y:                  ($spacer / 2) !default;
+$navbar-padding-y:                  (($spacer / 2) + 1.5rem) !default;
 $navbar-padding-x:                  $spacer !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
