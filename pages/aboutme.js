@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Prev App</title>
+        <title>Fullstack Developer - Rafi Royhan</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
