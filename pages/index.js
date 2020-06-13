@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Create Prev App</title>
+				<title>Wellrafi - do with passion</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
